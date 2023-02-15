@@ -1,0 +1,120 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container {
+  display: grid;
+  grid-template-rows: minmax(526px, auto, auto);
+}
+
+.promo {
+  background-image: url('../../assets/images/home/books_bg.png');
+  &__container {
+    background: rgba(1, 9, 50, 0.51);
+    padding: 55px 82px;
+    height: 416px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text-block {
+    max-width: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__header {
+    @include header($white-color);
+    text-align: left;
+  }
+  &__descr {
+    font-size: 18px;
+    color: $white-color;
+    font-weight: 600;
+    line-height: 32.85px;
+  }
+  &__logo {
+    max-width: 416px;
+  }
+}
+
+.intervention {
+  min-height: 1053px;
+  padding-top: 80px;
+  &__header {
+    @include header($bold-color);
+  }
+  &_descr {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(1, 9, 50, 0.85);
+    padding: 32px 65px 48px 92px;
+    line-height: 43.81px;
+    margin: 0;
+  }
+  &__wrap {
+    height: 660px;
+    padding: 0 55px 180px 92px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__img {
+    &_bottom {
+      align-self: self-end;
+    }
+  }
+}
+
+.journey {
+  padding: 0 55px 200px 92px;
+  &__header {
+    @include header($bold-color);
+  }
+  &__wrap {
+    display: grid;
+    grid-template-columns: 700px 555px;
+    grid-column-gap: 42px;
+    margin-top: 75px;
+  }
+  &__descr {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43.81px;
+    color: rgba(1, 9, 50, 0.85);
+    margin: 0;
+  }
+}
+
+.every {
+  padding: 0 55px 200px 92px;
+  &__header {
+    @include header($bold-color);
+  }
+  &__wrap {
+    display: grid;
+    grid-template-columns: 554px 645px;
+    grid-column-gap: 96px;
+    margin-top: 90px;
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43.81px;
+    color: rgba(1, 9, 50, 0.85);
+    margin: 0;
+    position: relative;
+  }
+  &__separate {
+    width: 58px;
+    height: 2px;
+    background-color: $bold-color;
+    margin-left: 0;
+    position: absolute;
+    top: 52%;
+  }
+  p {
+    margin: 0;
+  }
+}

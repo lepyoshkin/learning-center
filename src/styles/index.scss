@@ -1,3 +1,14 @@
 @import-normalize;
 @import './variables.scss';
 @import './fonts.scss';
+@import './mixins.scss';
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}

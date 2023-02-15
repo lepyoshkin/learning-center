@@ -1,0 +1,11 @@
+@mixin header($color) {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Patrick Hand', cursive;
+  color: $color;
+  text-align: center;
+  margin: 0;
+}
+
+@mixin button {
+}

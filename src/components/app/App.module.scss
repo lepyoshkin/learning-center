@@ -1,4 +1,6 @@
-.app {
-  text-align: center;
-  color: pink;
+.container {
+  display: grid;
+  grid-template-columns: minmax(390px, 1440px);
+  justify-content: center;
+  grid-template-rows: 165px;
 }
